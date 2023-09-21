@@ -1,4 +1,13 @@
 <script>
+	import Modal from './Modal.svelte';
+	import AddPersonForm from './AddPersonForm.svelte';
+
+	let showModal = false;
+
+	const toggleModal = () => {
+		showModal = !showModal;
+	}
+
 	let people = [
 		{ name: 'park', beltColor: 'black', age: 18, id: 1 },
 		{ name: 'geom', beltColor: 'red', age: 39, id: 2 },
@@ -7,27 +16,22 @@
 
 	const handleClick = (id) => {
 		// delete the person from people
-		console.log(id);
+		people = people.filter((person) => person.id != id)
 	};
+
 </script>
 
+<Modal {showModal} on:click={toggleModal}>
+	<AddPersonForm/>
+</Modal>
 <main>
-	<!-- <div>
-		<h4>{people[0].name}</h4>
-		<p>{people[0].beltColor}</p>
-	</div>
-	<div>
-		<h4>{people[1].name}</h4>
-		<p>{people[1].beltColor}</p>
-	</div>
-	<div>
-		<h4>{people[2].name}</h4>
-		<p>{people[2].beltColor}</p>
-	</div>   -->
-
+	<button on:click|once={toggleModal}>Open Modal</button>
 	{#each people as person (person.id)}
 		<div>
 			<h4>{person.name}</h4>
+			{#if person.beltColor === 'black'}
+			   <p><strong>MASTER PARK</strong></p>
+			{/if}
 			<p>{person.age} years old, {person.beltColor} belt.</p>
 			<button on:click={handleClick(person.id)}>delete</button>
 		</div>
