@@ -1,4 +1,4 @@
-# Svelte Learning 📘
+<h1 align="center">Svelte Learning 📘</h1>
 
 <p align="center">
   <a href="https://svelte-learing.vercel.app/" target="_blank">
@@ -11,7 +11,7 @@
 <p align="center">This project was created by following the tutorial from this <a href="https://www.youtube.com/watch?v=zojEMeQGGHs&list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO&index=1&t=333s" target="_blank">YouTube video</a>:</p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=zojEMeQGGHs&list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO&index=1&t=333s" target="_blank">
+  <a href="https://www.youtube.com/watch?v=zojEMeQGGHs&list=PL4cUxeGkcC9hlbrVO_2QFVVqVPhlZmz7tO&index=1&t=333s" target="_blank">
     <img src="https://img.youtube.com/vi/zojEMeQGGHs/maxresdefault.jpg" alt="tetris-tutorial-video" />
   </a>
 </p>
