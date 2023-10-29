@@ -13,7 +13,7 @@
 
 <main>
 
-</main>c
+</main>
 <style>
     .backdrop{
         width: 100%;
