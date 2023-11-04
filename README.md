@@ -1,4 +1,4 @@
-<h1 align="center">Svelte Learning 📘</h1>
+<h1 align="center">SvelteStudy 📘</h1>
 
 <p align="center">
   <a href="https://svelte-learing.vercel.app/" target="_blank">
